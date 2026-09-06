@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AELITH – moderner CS2 Boosting Service im Anime Cyberpunk Style.">
-  <title>AELITH — CS2 Boosting</title>
+  <meta name="description" content="AELITH – CS2 Premier ELO Boosting, Preisrechner und praktische Console Commands.">
+  <title>AELITH — CS2 ELO Boosting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
@@ -15,40 +15,47 @@
   <div class="bg-orb orb-two"></div>
 
   <header class="header">
-    <a class="brand" href="#home" aria-label="AELITH Startseite">
+    <a class="brand" href="#home" aria-label="AELITH">
       <span class="brand-mark">A</span>
       <span>AELITH</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
 
     <nav class="nav" id="nav">
-      <a class="active" href="#home">HOME</a>
-      <a href="#boosting">BOOSTING</a>
-      <a href="#ranks">RANKS</a>
-      <a href="#prices">PREISE</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">KONTAKT</a>
+      <a class="active" href="#home" data-i18n="nav.home">HOME</a>
+      <a href="#boosting" data-i18n="nav.boosting">BOOSTING</a>
+      <a href="#calculator" data-i18n="nav.calculator">ELO-RECHNER</a>
+      <a href="#commands" data-i18n="nav.commands">COMMANDS</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">KONTAKT</a>
     </nav>
 
-    <a class="discord-btn" href="https://discord.gg/aelith" target="_blank" rel="noopener">◈ DISCORD</a>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Sprache">
+        <button class="active" type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="discord-btn" href="https://discord.gg/aelith" target="_blank" rel="noopener">◈ DISCORD</a>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="home">
       <div class="hero-content reveal">
-        <p class="eyebrow">PROFESSIONELL. SICHER. ZUVERLÄSSIG.</p>
-        <h1>CS2 BOOSTING<br><span>AUF EINEM NEUEN LEVEL.</span></h1>
-        <p class="hero-text">Aelith bringt dein Ranking auf das nächste Level.<br>Schnell, professionell und mit erfahrenen Boostern.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">PREMIER ELO. KLARER PREIS. DIREKTER START.</p>
+        <h1><span data-i18n="hero.titleLine1">CS2 ELO BOOSTING</span><br><span data-i18n="hero.titleLine2">AUF EINEM NEUEN LEVEL.</span></h1>
+        <p class="hero-text" data-i18n="hero.text">Wähle deine aktuelle und gewünschte Premier-Wertung. Der Rechner zeigt dir sofort eine unverbindliche Preisschätzung.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#prices">JETZT BOOST SICHERN <span>→</span></a>
-          <a class="btn ghost" href="#prices">UNSERE PREISE <span>→</span></a>
+          <a class="btn primary" href="#calculator"><span data-i18n="hero.ctaCalc">ELO BERECHNEN</span> <span>→</span></a>
+          <a class="btn ghost" href="#commands"><span data-i18n="hero.ctaCommands">CS2 COMMANDS</span> <span>→</span></a>
         </div>
 
         <div class="trust-row">
-          <div><b>♢ 100% SICHER</b><small>Dein Account in sicheren Händen</small></div>
-          <div><b>♧ PROFESSIONELLE BOOSTER</b><small>Erfahren & verifiziert</small></div>
-          <div><b>◉ SUPPORT 24/7</b><small>Wir sind immer für dich da</small></div>
+          <div><b data-i18n="trust.priceTitle">◇ TRANSPARENTER PREIS</b><small data-i18n="trust.priceText">Schätzung direkt im Rechner</small></div>
+          <div><b data-i18n="trust.experienceTitle">♙ ERFAHRENE BOOSTER</b><small data-i18n="trust.experienceText">Verifiziert und zuverlässig</small></div>
+          <div><b data-i18n="trust.supportTitle">◉ SUPPORT 24/7</b><small data-i18n="trust.supportText">Direkt über Discord erreichbar</small></div>
         </div>
       </div>
 
@@ -60,98 +67,194 @@
 
     <section class="section" id="boosting">
       <div class="section-heading reveal">
-        <span>—</span><h2>WARUM <em>AELITH?</em></h2><span>—</span>
+        <span>—</span><h2><span data-i18n="why.title">WARUM</span> <em>AELITH?</em></h2><span>—</span>
       </div>
 
       <div class="feature-grid">
-        <article class="feature-card reveal"><i>◇</i><h3>SICHER & FAIR</h3><p>Dein Account bleibt bei uns in sicheren Händen.</p></article>
-        <article class="feature-card reveal"><i>♙</i><h3>EXPERIENCE</h3><p>Unsere Booster sind hoch erfahren und zuverlässig.</p></article>
-        <article class="feature-card reveal"><i>↗</i><h3>SCHNELL & EFFIZIENT</h3><p>Wir liefern schnelle und saubere Ergebnisse.</p></article>
-        <article class="feature-card reveal"><i>◎</i><h3>WELTWEIT</h3><p>Unsere Services sind international verfügbar.</p></article>
-        <article class="feature-card reveal"><i>◉</i><h3>24/7 SUPPORT</h3><p>Unser Support-Team ist jederzeit für dich da.</p></article>
+        <article class="feature-card reveal"><i>◇</i><h3 data-i18n="why.fairTitle">KLAR & FAIR</h3><p data-i18n="why.fairText">Du siehst vorab, wie sich dein Boost zusammensetzt.</p></article>
+        <article class="feature-card reveal"><i>♙</i><h3 data-i18n="why.experienceTitle">ERFAHRUNG</h3><p data-i18n="why.experienceText">Dein Auftrag wird professionell und zuverlässig betreut.</p></article>
+        <article class="feature-card reveal"><i>↗</i><h3 data-i18n="why.fastTitle">SCHNELL & EFFIZIENT</h3><p data-i18n="why.fastText">Ein klarer Ablauf ohne unnötige Wartezeiten.</p></article>
+        <article class="feature-card reveal"><i>◎</i><h3 data-i18n="why.globalTitle">WELTWEIT</h3><p data-i18n="why.globalText">Der Service ist international verfügbar.</p></article>
+        <article class="feature-card reveal"><i>◉</i><h3 data-i18n="why.supportTitle">24/7 SUPPORT</h3><p data-i18n="why.supportText">Fragen klären wir direkt und unkompliziert.</p></article>
       </div>
     </section>
 
-    <section class="section ranks" id="ranks">
+    <section class="section calculator-section" id="calculator">
       <div class="section-heading reveal">
-        <span>—</span><h2>RANK <em>BOOSTING</em></h2><span>—</span>
+        <span>—</span><h2><span data-i18n="calculator.title">ELO BOOST</span> <em data-i18n="calculator.titleAccent">RECHNER</em></h2><span>—</span>
       </div>
-      <p class="center-text">Von Silver bis Global Elite – wir bringen dich an dein Ziel.</p>
+      <p class="center-text" data-i18n="calculator.intro">Premier-Wertungen eingeben und sofort eine unverbindliche Schätzung erhalten.</p>
 
-      <div class="rank-track">
-        <div class="rank-card reveal"><strong>▰</strong><b>SILVER</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal"><strong>▰</strong><b>SILVER ELITE</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal gold"><strong>★</strong><b>GOLD NOVA</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal gold"><strong>◆</strong><b>MASTER GUARDIAN</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal gold"><strong>♛</strong><b>LEGENDARY EAGLE</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal gold"><strong>✦</strong><b>SUPREME</b></div>
-        <span class="arrow">»</span>
-        <div class="rank-card reveal gold"><strong>◉</strong><b>GLOBAL ELITE</b></div>
+      <div class="calculator-shell reveal">
+        <form class="elo-form" id="elo-form" novalidate>
+          <div class="form-heading">
+            <span class="status-dot"></span>
+            <p data-i18n="calculator.formEyebrow">PREMIER BOOST KONFIGURIEREN</p>
+          </div>
+
+          <label for="current-elo" data-i18n="calculator.currentLabel">Aktuelle ELO</label>
+          <div class="elo-input-wrap">
+            <input id="current-elo" name="currentElo" type="number" min="0" max="39999" step="100" value="12000" inputmode="numeric" required>
+            <span>ELO</span>
+          </div>
+
+          <label for="target-elo" data-i18n="calculator.targetLabel">Gewünschte ELO</label>
+          <div class="elo-input-wrap">
+            <input id="target-elo" name="targetElo" type="number" min="1" max="40000" step="100" value="16000" inputmode="numeric" required>
+            <span>ELO</span>
+          </div>
+
+          <button class="btn primary calculate-btn" type="submit"><span data-i18n="calculator.button">BOOST BERECHNEN</span> <span>→</span></button>
+          <p class="form-error" id="elo-error" role="alert" aria-live="polite"></p>
+        </form>
+
+        <div class="estimate-panel" id="estimate-panel" aria-live="polite">
+          <div class="estimate-topline">
+            <span data-i18n="calculator.estimate">DEINE SCHÄTZUNG</span>
+            <b data-i18n="calculator.instant">SOFORT BERECHNET</b>
+          </div>
+          <p class="estimate-route" id="estimate-route">12.000 → 16.000 ELO</p>
+          <div class="estimate-grid">
+            <div><span data-i18n="calculator.difference">ELO-DIFFERENZ</span><strong id="elo-difference">+4.000</strong></div>
+            <div><span data-i18n="calculator.price">GESCHÄTZTER PREIS</span><strong id="elo-price">15,46 €</strong></div>
+          </div>
+          <p class="estimate-note" data-i18n="calculator.note">Die Berechnung ist unverbindlich. Den finalen Preis und die Verfügbarkeit bestätigt dir unser Team auf Discord.</p>
+          <a class="btn primary estimate-cta" href="https://discord.gg/aelith/" target="_blank" rel="noopener"><span data-i18n="calculator.cta">AUF DISCORD ANFRAGEN</span> <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="rate-strip reveal" aria-label="ELO Preisstufen">
+        <span><b>0–9.999</b><small data-i18n="calculator.tier1">ab 2,49 € / 1.000 ELO</small></span>
+        <span><b>10.000–14.999</b><small data-i18n="calculator.tier2">ab 3,49 € / 1.000 ELO</small></span>
+        <span><b>15.000–19.999</b><small data-i18n="calculator.tier3">ab 4,99 € / 1.000 ELO</small></span>
+        <span><b>20.000–24.999</b><small data-i18n="calculator.tier4">ab 6,49 € / 1.000 ELO</small></span>
+        <span><b>25.000+</b><small data-i18n="calculator.tier5">individuelle Anfrage</small></span>
       </div>
     </section>
 
-    <section class="section" id="prices">
+    <section class="section commands-section" id="commands">
       <div class="section-heading reveal">
-        <span>—</span><h2>SO <em>FUNKTIONIERT'S</em></h2><span>—</span>
+        <span>—</span><h2>CS2 <em data-i18n="commands.title">COMMANDS</em></h2><span>—</span>
       </div>
-      <div class="steps">
-        <article class="step reveal"><span>01</span><i>🛒</i><h3>BESTELLUNG</h3><p>Wähle dein gewünschtes Rank-Ziel und gib deine Daten sicher ein.</p></article>
-        <article class="step reveal"><span>02</span><i>♙</i><h3>BOOST STARTET</h3><p>Unsere Booster starten deinen Boost und halten dich auf dem Laufenden.</p></article>
-        <article class="step reveal"><span>03</span><i>↗</i><h3>RANK UP</h3><p>Lehne dich zurück und sieh zu, wie dein Ranking steigt.</p></article>
-        <article class="step reveal"><span>04</span><i>✓</i><h3>ZIEL ERREICHT</h3><p>Erreiche dein Ziel und spiele auf deinem neuen Level.</p></article>
-      </div>
+      <p class="center-text" data-i18n="commands.intro">Nützliche Befehle suchen, auswählen und mit einem Klick kopieren.</p>
 
-      <div class="pricing reveal">
-        <div class="price-card">
-          <span class="tag">STARTER</span><h3>SILVER → GOLD</h3><strong>ab 9,99 €</strong><p>Perfekt für den schnellen Rank-Up.</p><a class="btn primary" href="#contact">BOOST WÄHLEN</a>
+      <div class="command-tool reveal">
+        <div class="command-toolbar">
+          <div class="command-tabs" role="tablist" aria-label="Command Kategorien">
+            <button class="active" type="button" role="tab" aria-selected="true" data-command-tab="all" data-i18n="commands.tabAll">ALLE</button>
+            <button type="button" role="tab" aria-selected="false" data-command-tab="performance" data-i18n="commands.tabPerformance">PERFORMANCE</button>
+            <button type="button" role="tab" aria-selected="false" data-command-tab="crosshair" data-i18n="commands.tabCrosshair">FADENKREUZ</button>
+            <button type="button" role="tab" aria-selected="false" data-command-tab="viewmodel" data-i18n="commands.tabViewmodel">VIEWMODEL</button>
+            <button type="button" role="tab" aria-selected="false" data-command-tab="practice" data-i18n="commands.tabPractice">TRAINING</button>
+          </div>
+          <label class="command-search">
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only" data-i18n="commands.searchLabel">Commands durchsuchen</span>
+            <input id="command-search" type="search" placeholder="Command suchen …" data-i18n-placeholder="commands.searchPlaceholder">
+          </label>
         </div>
-        <div class="price-card featured">
-          <span class="tag">BELIEBT</span><h3>GOLD → GLOBAL</h3><strong>ab 24,99 €</strong><p>Für Spieler, die höher hinaus wollen.</p><a class="btn primary" href="#contact">BOOST WÄHLEN</a>
+
+        <div class="command-grid" id="command-grid">
+          <article class="command-card" data-category="performance" data-search="fps frame rate unlimited">
+            <div><span class="command-category" data-i18n="commands.tabPerformance">PERFORMANCE</span><h3>fps_max 0</h3><p data-i18n="commands.fpsMax">Hebt das FPS-Limit auf.</p></div>
+            <button class="copy-command" type="button" data-command="fps_max 0" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="performance" data-search="fps counter display frames">
+            <div><span class="command-category" data-i18n="commands.tabPerformance">PERFORMANCE</span><h3>cl_showfps 1</h3><p data-i18n="commands.showFps">Zeigt die aktuellen FPS an.</p></div>
+            <button class="copy-command" type="button" data-command="cl_showfps 1" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="performance" data-search="network graph connection quality ping">
+            <div><span class="command-category" data-i18n="commands.tabPerformance">PERFORMANCE</span><h3>cq_netgraph 1</h3><p data-i18n="commands.netgraph">Zeigt Informationen zur Verbindung.</p></div>
+            <button class="copy-command" type="button" data-command="cq_netgraph 1" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="crosshair" data-search="crosshair static style">
+            <div><span class="command-category" data-i18n="commands.tabCrosshair">FADENKREUZ</span><h3>cl_crosshairstyle 4</h3><p data-i18n="commands.crosshairStyle">Aktiviert ein klassisches statisches Fadenkreuz.</p></div>
+            <button class="copy-command" type="button" data-command="cl_crosshairstyle 4" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="crosshair" data-search="crosshair size length">
+            <div><span class="command-category" data-i18n="commands.tabCrosshair">FADENKREUZ</span><h3>cl_crosshairsize 2.5</h3><p data-i18n="commands.crosshairSize">Stellt die Linienlänge des Fadenkreuzes ein.</p></div>
+            <button class="copy-command" type="button" data-command="cl_crosshairsize 2.5" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="crosshair" data-search="crosshair gap spacing">
+            <div><span class="command-category" data-i18n="commands.tabCrosshair">FADENKREUZ</span><h3>cl_crosshairgap -3</h3><p data-i18n="commands.crosshairGap">Verringert den Abstand in der Mitte.</p></div>
+            <button class="copy-command" type="button" data-command="cl_crosshairgap -3" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="viewmodel" data-search="viewmodel fov weapon field view">
+            <div><span class="command-category" data-i18n="commands.tabViewmodel">VIEWMODEL</span><h3>viewmodel_fov 68</h3><p data-i18n="commands.viewmodelFov">Setzt das Sichtfeld des Waffenmodells.</p></div>
+            <button class="copy-command" type="button" data-command="viewmodel_fov 68" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="viewmodel" data-search="viewmodel position x weapon">
+            <div><span class="command-category" data-i18n="commands.tabViewmodel">VIEWMODEL</span><h3>viewmodel_offset_x 2.5</h3><p data-i18n="commands.viewmodelX">Verschiebt das Waffenmodell horizontal.</p></div>
+            <button class="copy-command" type="button" data-command="viewmodel_offset_x 2.5" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="viewmodel" data-search="viewmodel position z weapon height">
+            <div><span class="command-category" data-i18n="commands.tabViewmodel">VIEWMODEL</span><h3>viewmodel_offset_z -1.5</h3><p data-i18n="commands.viewmodelZ">Setzt die Höhe des Waffenmodells.</p></div>
+            <button class="copy-command" type="button" data-command="viewmodel_offset_z -1.5" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="practice" data-search="practice cheats server training">
+            <div><span class="command-category" data-i18n="commands.tabPractice">TRAINING</span><h3>sv_cheats 1</h3><p data-i18n="commands.cheats">Aktiviert Trainingsbefehle auf dem eigenen Server.</p></div>
+            <button class="copy-command" type="button" data-command="sv_cheats 1" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="practice" data-search="practice infinite ammo grenades">
+            <div><span class="command-category" data-i18n="commands.tabPractice">TRAINING</span><h3>sv_infinite_ammo 1</h3><p data-i18n="commands.ammo">Aktiviert unbegrenzte Munition im Training.</p></div>
+            <button class="copy-command" type="button" data-command="sv_infinite_ammo 1" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
+          <article class="command-card" data-category="practice" data-search="practice bots kick remove">
+            <div><span class="command-category" data-i18n="commands.tabPractice">TRAINING</span><h3>bot_kick</h3><p data-i18n="commands.botKick">Entfernt alle Bots aus der Trainingsrunde.</p></div>
+            <button class="copy-command" type="button" data-command="bot_kick" data-i18n="commands.copy">KOPIEREN</button>
+          </article>
         </div>
-        <div class="price-card">
-          <span class="tag">CUSTOM</span><h3>INDIVIDUELL</h3><strong>Auf Anfrage</strong><p>Individuelle Ziele und Sonderwünsche.</p><a class="btn primary" href="#contact">ANFRAGE</a>
-        </div>
+        <p class="command-empty" id="command-empty" hidden data-i18n="commands.empty">Keine passenden Commands gefunden.</p>
+        <p class="command-note" data-i18n="commands.note">Trainingsbefehle funktionieren nur auf einem eigenen Server oder in einer lokalen Practice-Lobby.</p>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-heading reveal">
+        <span>—</span><h2><span data-i18n="process.title">SO</span> <em data-i18n="process.titleAccent">FUNKTIONIERT'S</em></h2><span>—</span>
+      </div>
+      <div class="steps three-steps">
+        <article class="step reveal"><span>01</span><i>⌁</i><h3 data-i18n="process.step1Title">ELO EINGEBEN</h3><p data-i18n="process.step1Text">Trage deine aktuelle und gewünschte Premier-Wertung ein.</p></article>
+        <article class="step reveal"><span>02</span><i>◇</i><h3 data-i18n="process.step2Title">PREIS PRÜFEN</h3><p data-i18n="process.step2Text">Der Rechner zeigt dir sofort eine transparente Schätzung.</p></article>
+        <article class="step reveal"><span>03</span><i>◉</i><h3 data-i18n="process.step3Title">AUFTRAG ANFRAGEN</h3><p data-i18n="process.step3Text">Bestätige Details und Verfügbarkeit direkt mit dem Team.</p></article>
       </div>
     </section>
 
     <section class="section testimonials">
       <div class="section-heading reveal">
-        <span>—</span><h2>KUNDEN<em>STIMMEN</em></h2><span>—</span>
+        <span>—</span><h2><span data-i18n="testimonials.title">KUNDEN</span><em data-i18n="testimonials.titleAccent">STIMMEN</em></h2><span>—</span>
       </div>
       <div class="testimonial-grid">
-        <blockquote class="quote reveal"><div>★★★★★</div><p>„Schneller und sicherer Service! Top Booster!“</p><cite>— PECO</cite></blockquote>
-        <blockquote class="quote reveal"><div>★★★★★</div><p>„Sehr professioneller und freundlicher Support. Klare Empfehlung!“</p><cite>— Midnight</cite></blockquote>
-        <blockquote class="quote reveal"><div>★★★★★</div><p>„Endlich Global Elite erreicht. Danke an das Aelith Team!“</p><cite>— Mr.Hightier</cite></blockquote>
+        <blockquote class="quote reveal"><div>★★★★★</div><p data-i18n="testimonials.quote1">„Schneller Service und klare Kommunikation.“</p><cite>— PECO</cite></blockquote>
+        <blockquote class="quote reveal"><div>★★★★★</div><p data-i18n="testimonials.quote2">„Professioneller und freundlicher Support. Klare Empfehlung!“</p><cite>— Midnight</cite></blockquote>
+        <blockquote class="quote reveal"><div>★★★★★</div><p data-i18n="testimonials.quote3">„Die Abwicklung war unkompliziert und transparent.“</p><cite>— Mr.Hightier</cite></blockquote>
       </div>
     </section>
 
     <section class="cta reveal" id="contact">
-      <div><p>DEIN NÄCHSTER RANKUP?</p><h2>BEREIT FÜR DEINEN <em>BOOST?</em></h2><span>Starte jetzt und erreiche dein gewünschtes CS2-Level.</span></div>
-      <a class="btn primary" href="https://discord.gg/aelith/" target="_blank" rel="noopener">JETZT BOOST STARTEN →</a>
+      <div><p data-i18n="cta.eyebrow">DEIN NÄCHSTES ELO-ZIEL?</p><h2><span data-i18n="cta.title">BEREIT FÜR DEINEN</span> <em data-i18n="cta.titleAccent">BOOST?</em></h2><span data-i18n="cta.text">Berechne zuerst deine Schätzung oder starte direkt eine Anfrage.</span></div>
+      <a class="btn primary" href="https://discord.gg/aelith/" target="_blank" rel="noopener"><span data-i18n="cta.button">JETZT ANFRAGEN</span> →</a>
     </section>
 
     <section class="section faq" id="faq">
-      <div class="section-heading reveal"><span>—</span><h2>HÄUFIGE <em>FRAGEN</em></h2><span>—</span></div>
-      <details><summary>Wie funktioniert der Boost?</summary><p>Du wählst dein Ziel, übermittelst die notwendigen Informationen und erhältst Updates über den Fortschritt.</p></details>
-      <details><summary>Wie lange dauert ein Boost?</summary><p>Die Dauer hängt vom Ausgangsrang, Zielrang und der aktuellen Auslastung ab.</p></details>
-      <details><summary>Wie kann ich den Support erreichen?</summary><p>Am schnellsten erreichst du uns über Discord.</p></details>
+      <div class="section-heading reveal"><span>—</span><h2><span data-i18n="faq.title">HÄUFIGE</span> <em data-i18n="faq.titleAccent">FRAGEN</em></h2><span>—</span></div>
+      <details><summary data-i18n="faq.q1">Wie funktioniert der ELO-Rechner?</summary><p data-i18n="faq.a1">Du gibst Start- und Zielwertung ein. Der Rechner berücksichtigt die durchlaufenen Preisstufen und zeigt eine unverbindliche Schätzung.</p></details>
+      <details><summary data-i18n="faq.q2">Ist der angezeigte Preis verbindlich?</summary><p data-i18n="faq.a2">Nein. Den finalen Preis, Zeitrahmen und die Verfügbarkeit bestätigt dir das Team vor dem Start.</p></details>
+      <details><summary data-i18n="faq.q3">Wie kann ich den Support erreichen?</summary><p data-i18n="faq.a3">Am schnellsten erreichst du uns über Discord.</p></details>
+      <details><summary data-i18n="faq.q4">Wo gebe ich die CS2 Commands ein?</summary><p data-i18n="faq.a4">Aktiviere die Entwicklerkonsole in den CS2-Einstellungen, öffne sie im Spiel und füge den kopierten Befehl ein.</p></details>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand"><span class="brand-mark">A</span><h2>AELITH</h2><p>Dein moderner CS2<br>Boosting Service.</p></div>
-    <div><h4>NAVIGATION</h4><a href="#home">Home</a><a href="#boosting">Boosting</a><a href="#prices">Preise</a><a href="#faq">FAQ</a></div>
-    <div><h4>SERVICE</h4><a href="#ranks">Rank Boosting</a><a href="#prices">Duo Boosting</a><a href="#contact">Placement Matches</a><a href="#contact">Account Leveling</a></div>
-    <div><h4>RECHTLICHES</h4><a href="#">AGB</a><a href="#">Datenschutz</a><a href="#">Impressum</a></div>
-    <div><h4>SUPPORT</h4><a href="https://discord.gg/aelith/" target="_blank" rel="noopener">Discord Support</a><a href="#contact">E-Mail Support</a><a href="#contact">Live Support</a></div>
-    <div class="copyright">© 2026 AELITH — CS2 Boosting Service. Alle Rechte vorbehalten.</div>
+    <div class="footer-brand"><span class="brand-mark">A</span><h2>AELITH</h2><p data-i18n="footer.tagline">CS2 Premier ELO Service<br>und Command Hub.</p></div>
+    <div><h4 data-i18n="footer.navigation">NAVIGATION</h4><a href="#home" data-i18n="nav.home">Home</a><a href="#boosting" data-i18n="nav.boosting">Boosting</a><a href="#calculator" data-i18n="nav.calculator">ELO-Rechner</a><a href="#commands" data-i18n="nav.commands">Commands</a></div>
+    <div><h4 data-i18n="footer.service">SERVICE</h4><a href="#calculator" data-i18n="footer.eloBoost">Premier ELO Boost</a><a href="#commands" data-i18n="footer.commandHub">CS2 Command Hub</a><a href="#contact" data-i18n="footer.custom">Individuelle Anfrage</a></div>
+    <div><h4 data-i18n="footer.legal">RECHTLICHES</h4><a href="#" data-i18n="footer.terms">AGB</a><a href="#" data-i18n="footer.privacy">Datenschutz</a><a href="#" data-i18n="footer.imprint">Impressum</a></div>
+    <div><h4 data-i18n="footer.support">SUPPORT</h4><a href="https://discord.gg/aelith/" target="_blank" rel="noopener">Discord Support</a><a href="#contact" data-i18n="footer.email">E-Mail Support</a><a href="#contact" data-i18n="footer.live">Live Support</a></div>
+    <div class="copyright">© 2026 AELITH — <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></div>
   </footer>
 
+  <div class="copy-toast" id="copy-toast" role="status" aria-live="polite" data-i18n="commands.copied">Command kopiert</div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,32 +1,32 @@
-# AELITH — CS2 Boosting Website
+# AELITH — CS2 ELO Boosting Website
 
-Eine responsive, animierte One-Page-Website im Anime/Cyberpunk-Look für AELITH.
+Responsive One-Page-Website im bestehenden Anime/Cyberpunk-Look für AELITH.
+
+## Funktionen
+
+- Premier-ELO-Rechner mit gestaffelter Preisschätzung
+- Sprachumschaltung für Deutsch, Englisch und Russisch
+- durchsuchbarer CS2-Command-Hub mit Kategorien und Kopierfunktion
+- responsive Navigation und Scroll-Animationen
 
 ## Dateien
 
-- `index.html` — komplette Website-Struktur
+- `index.html` — Website-Struktur und Inhalte
 - `style.css` — Design, Responsive Layout und Animationen
-- `script.js` — Mobile Navigation, Scroll-Reveal und aktive Navigation
-- `assets/hero-character.jpg` — Artwork aus dem AELITH-Mockup
+- `script.js` — Rechner, Sprachen, Commands, Navigation und Interaktionen
+- `assets/hero-character.jpg` — bestehendes AELITH Artwork
 
 ## GitHub Pages
 
-1. Neues GitHub-Repository erstellen, z. B. `aelith-cs2-boosting`.
-2. Alle Dateien aus diesem Ordner ins Repository hochladen.
-3. **Settings → Pages** öffnen.
-4. Unter **Build and deployment** `Deploy from a branch` auswählen.
-5. Branch `main` und Ordner `/ (root)` auswählen.
-6. Speichern.
-
-Danach stellt GitHub Pages die Website automatisch bereit.
+1. Unter **Settings → Pages** `Deploy from a branch` auswählen.
+2. Branch `main` und Ordner `/ (root)` auswählen.
+3. Speichern.
 
 ## Vor dem Livegang
 
-Ersetze die Platzhalter für:
-- Discord-Link
-- Preise
-- AGB / Datenschutz / Impressum
-- Support-/Kontaktmöglichkeiten
-- echte Kundenbewertungen
+- Discord-Link prüfen
+- Preisstufen im ELO-Rechner mit den echten Preisen abgleichen
+- AGB, Datenschutz und Impressum hinterlegen
+- veröffentlichte Kundenbewertungen verifizieren
 
-Hinweis: Die Seite ist ein Design-/Frontend-Entwurf. Aussagen wie „100% sicher“ oder konkrete Serviceversprechen sollten vor dem Livegang rechtlich und tatsächlich geprüft werden.
+Die Preisberechnung ist im Frontend ausdrücklich als unverbindliche Schätzung gekennzeichnet.
